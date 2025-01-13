@@ -1,0 +1,63 @@
+
+This file lists modules PyInstaller was not able to find. This does not
+necessarily mean this module is required for running your program. Python and
+Python 3rd-party packages include a lot of conditional or optional modules. For
+example the module 'ntpath' only exists on Windows, whereas the module
+'posixpath' only exists on Posix systems.
+
+Types if import:
+* top-level: imported at the top-level - look at these first
+* conditional: imported within an if-statement
+* delayed: imported within a function
+* optional: imported within a try-except-statement
+
+IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
+            tracking down the missing module yourself. Thanks!
+
+missing module named pwd - imported by posixpath (delayed, conditional, optional), shutil (delayed, optional), tarfile (optional), pathlib (delayed, optional), subprocess (delayed, conditional, optional), http.server (delayed, optional), netrc (delayed, conditional), getpass (delayed)
+missing module named grp - imported by shutil (delayed, optional), tarfile (optional), pathlib (delayed, optional), subprocess (delayed, conditional, optional)
+missing module named _posixsubprocess - imported by subprocess (conditional), multiprocessing.util (delayed)
+missing module named fcntl - imported by subprocess (optional)
+missing module named _posixshmem - imported by multiprocessing.resource_tracker (conditional), multiprocessing.shared_memory (conditional)
+missing module named _scproxy - imported by urllib.request (conditional)
+missing module named termios - imported by tty (top-level), getpass (optional)
+missing module named urllib.urlopen - imported by urllib (delayed, optional), lxml.html (delayed, optional)
+missing module named urllib.urlencode - imported by urllib (delayed, optional), lxml.html (delayed, optional)
+missing module named multiprocessing.BufferTooShort - imported by multiprocessing (top-level), multiprocessing.connection (top-level)
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing (top-level), multiprocessing.connection (top-level)
+missing module named posix - imported by os (conditional, optional), shutil (conditional), importlib._bootstrap_external (conditional), posixpath (optional)
+missing module named resource - imported by posix (top-level)
+missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), zipimport (top-level)
+excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional), zipimport (top-level)
+missing module named multiprocessing.get_context - imported by multiprocessing (top-level), multiprocessing.pool (top-level), multiprocessing.managers (top-level), multiprocessing.sharedctypes (top-level)
+missing module named multiprocessing.TimeoutError - imported by multiprocessing (top-level), multiprocessing.pool (top-level)
+missing module named multiprocessing.set_start_method - imported by multiprocessing (top-level), multiprocessing.spawn (top-level)
+missing module named multiprocessing.get_start_method - imported by multiprocessing (top-level), multiprocessing.spawn (top-level)
+missing module named pyimod02_importers - imported by C:\Users\anast\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth_pkgutil.py (delayed)
+missing module named 'elementtree.cElementTree' - imported by oletools.ftguess (optional), oletools.olevba (optional)
+missing module named __builtin__ - imported by oletools.common.io_encoding (conditional), win_unicode_console.raw_input (top-level)
+missing module named vms_lib - imported by platform (delayed, optional)
+missing module named 'java.lang' - imported by platform (delayed, optional)
+missing module named java - imported by platform (delayed)
+missing module named _winreg - imported by platform (delayed, optional)
+missing module named pyreadline - imported by win_unicode_console.readline_hook (optional)
+missing module named readline - imported by cmd (delayed, conditional, optional), code (delayed, conditional, optional), pdb (delayed, optional)
+missing module named bcrypt - imported by cryptography.hazmat.primitives.serialization.ssh (optional)
+missing module named XLMMacroDeobfuscator - imported by C:\Users\anast\AppData\Local\Programs\Python\Python312\Lib\site-packages\oletools\olevba.py (optional), oletools.olevba (optional)
+missing module named pyparsing.Word - imported by pyparsing (delayed), pyparsing.unicode (delayed), C:\Users\anast\AppData\Local\Programs\Python\Python312\Lib\site-packages\oletools\olevba.py (top-level), oletools.olevba (top-level)
+missing module named asyncio.DefaultEventLoopPolicy - imported by asyncio (delayed, conditional), asyncio.events (delayed, conditional)
+missing module named railroad - imported by pyparsing.diagram (top-level)
+missing module named elementtree - imported by C:\Users\anast\AppData\Local\Programs\Python\Python312\Lib\site-packages\oletools\olevba.py (optional)
+missing module named htmlentitydefs - imported by lxml.html.soupparser (optional)
+missing module named BeautifulSoup - imported by lxml.html.soupparser (optional)
+missing module named unicodedata2 - imported by charset_normalizer.utils (optional)
+missing module named chardet - imported by bs4.dammit (optional)
+missing module named cchardet - imported by bs4.dammit (optional)
+missing module named bs4.builder.HTMLParserTreeBuilder - imported by bs4.builder (top-level), bs4 (top-level)
+missing module named 'html5lib.treebuilders' - imported by bs4.builder._html5lib (optional), lxml.html._html5builder (top-level), lxml.html.html5parser (top-level)
+missing module named 'html5lib.constants' - imported by bs4.builder._html5lib (top-level)
+missing module named html5lib - imported by bs4.builder._html5lib (top-level), lxml.html.html5parser (top-level)
+missing module named urlparse - imported by lxml.ElementInclude (optional), lxml.html.html5parser (optional)
+missing module named urllib2 - imported by lxml.ElementInclude (optional), lxml.html.html5parser (optional)
+missing module named lxml_html_clean - imported by lxml.html.clean (optional)
+missing module named cssselect - imported by lxml.cssselect (optional)
