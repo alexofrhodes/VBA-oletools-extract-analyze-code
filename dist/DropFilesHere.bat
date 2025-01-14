@@ -14,6 +14,9 @@ if not exist "%output_dir%" (
     mkdir "%output_dir%"
 )
 
+rem Get the current directory of the batch script
+set "script_dir=%~dp0"
+
 rem Process each dropped file
 for %%F in (%*) do (
     rem Get the filename without the path
@@ -25,7 +28,7 @@ for %%F in (%*) do (
     
     rem Call olevba.exe on the file and redirect output
     echo Processing "%%~F" ...
-    olevba.exe "%%~F" > "!output_file!" 2>&1
+    "%script_dir%olevba.exe" "%%~F" > "!output_file!" 2>&1
 )
 
 echo All files processed. Outputs are in the "%output_dir%" directory.
