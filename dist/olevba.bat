@@ -1,9 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion
 
-rem Check if files are dropped
+rem Check if files are provided either by drag-and-drop or via command-line arguments
 if "%~1"=="" (
-    echo Drag and drop files onto this script to process them with olevba.exe.
+    echo Drag and drop files onto this script OR run it from the command line with file paths.
+    echo Usage: olevba.bat file1.doc file2.docx
     pause
     exit /b
 )
@@ -11,7 +12,7 @@ if "%~1"=="" (
 rem Get the current directory of the batch script
 set "script_dir=%~dp0"
 
-rem Process each dropped file
+rem Process each provided file
 for %%F in (%*) do (
     rem Get the filename without extension
     set "filename=%%~nF"
